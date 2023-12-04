@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Lato:ital,wght@1,900&family=Merriweather+Sans:wght@300&family=Montserrat:wght@200&family=Playfair+Display:ital,wght@1,600&family=Risque&family=Roboto&family=Source+Sans+3:ital@1&display=swap');
+
+:root {
+    --OX: #0B1938;
+    --UV: #565488;
+    --SPACE: #142248;
+    --GOLD: #D2A653;
+    --YELL: #FF6B;
+    --WIZ: #7ED657;
+    --BONE: #B7B6C2;
+    --SAGE: #A4B993;
+    --BONE2: #B1ACB2;
+    --PEACH: #D5C3B3;
+    --DIRTYROSE: #B29A99;
+    --CSC: 'Cormorant SC', serif;
+    --LAT: 'Lato', sans-serif;
+    --MWS: 'Merriweather Sans', sans-serif;
+    --PFD: 'Playfair Display', serif;
+    --RIS: 'Risque', serif;
+    --ROB: 'Roboto', sans-serif;
+    --SS3: 'Source Sans 3', sans-serif;  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  font-family: var(--RIS); /* default font */
+  background-color: var(--SPACE); /* default background color */
+  color: var(--GOLD); /* default font color */
 }

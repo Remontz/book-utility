@@ -1,0 +1,682 @@
+/* General Styles */
+
+/* Main book review container */
+.book-review {
+    margin: 0 auto;
+    padding: 1.5rem;
+    width: 65%;
+    border-radius: 15px;
+    background-image: linear-gradient(120deg, var(--OX), var(--SPACE), var(--UV));
+}
+
+/* Title styling */
+h2.title {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0.85rem 0.3rem var(--OX);
+    -webkit-text-stroke: 0.001rem var(--BONE);
+}
+
+/* Utility Classes */
+
+/* Instructions and offscreen elements */
+.instructions, .offscreen {
+    font-size: 0.55rem;
+    font-family: var(--CSC);
+    color: var(--BONE);
+    background-color: var(--OX);
+    max-width: 60%;
+    padding: 0.5rem;
+    border-radius: 15px;
+    box-shadow: 0.15rem 0.15rem var(--UV);
+    position: relative;
+}
+
+.instructions, .offscreen > svg {
+    margin-right: 0.25rem;
+}
+
+/* Info circle icon */
+.info-circle {
+    color: var(--WIZ);
+}
+
+/* Check icon */
+.faCheck {
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+    padding: 0.05rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    border: 0.1px solid white;
+}
+
+/* Times (X) icon */
+.faTimes {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.05rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    border: 0.1px solid white;
+}
+
+/* Offscreen element for accessibility */
+.offscreen {
+    position: absolute;
+    left: -99999px;
+}
+
+/* Hide elements */
+.hide {
+    display: none;
+}
+
+/* Error message styling */
+.errmsg {
+    background-color: black;
+    color: firebrick;
+    font-size: 0.75rem;
+    font-family: var(--CSC);
+    padding: 0.5rem;
+    border-radius: 15px;
+    box-shadow: 0.15rem 0.15rem var(--UV);
+    margin-bottom: 0.5rem;
+}
+
+/* Clear element styling */
+.clear {
+    color: var(--WIZ);
+}
+
+/* Form */
+form>div {
+    padding: 1rem;
+    border-radius: 10px;
+    border-bottom: 3px solid var(--BONE);
+    border-right: 2px solid var(--BONE2);
+    margin-bottom: 1rem;
+}
+
+/* Form Sections */
+
+/* Introduction section */
+.introduction {
+    background-color: var(--SAGE);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.introduction > section {
+    flex: 1;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 0.3px solid var(--BONE2);
+    box-shadow: 0.15rem 0.15rem var(--UV);
+    color: var(--SPACE);
+}
+
+/* Summary section */
+.summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    gap: 1rem;
+    border-bottom: 3px solid #94A684;
+    border-top: 3px solid #94A684;
+    border-right: 3px solid #A4B992;
+}
+
+/* Brief Analysis section */
+.brief-analysis {
+    background-color: var(--UV);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+.brief-analysis > section {
+    flex: 1;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 0.3px solid var(--BONE2);
+    box-shadow: 0.15rem 0.15rem var(--SAGE);
+    color: var(--GOLD);
+}
+
+/* Summary Field Styles */
+.summary > div.summary-field {
+    flex: 5;
+}
+
+/* Cover Art Styles */
+.summary > div.cover-art {
+    flex: 1;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Story Games Logo Styles */
+.summary > div.story-games-logo {
+    flex: 1;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Round edges of Story Games Logo */
+.summary > div.story-games-logo  > img {
+    border-radius: 15px;
+    border: 0.1px solid var(--OX);
+    box-shadow: 1rem 0.5rem var(--UV);
+}
+
+/* Book Information & Reviewer Information Styles */
+.Book-Information {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.Reviewer-Information {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    align-content: center;
+    align-items: center;
+}
+
+/* Summary Field Styles */
+.summary-field {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    align-content: center;
+    align-items: center;
+}
+
+/* Brief & Analysis Styles */
+.Brief {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.Analysis {
+    display: flex;
+    flex-direction: column;
+}
+
+.Brief > .char-theme-parent {
+    display: flex;
+    flex-direction: row;
+}
+
+.Brief > .char-theme-parent > .char-theme-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Book Information Title Styles */
+.Book-Information > h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding: 0.35rem;
+    margin-bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: max-content;
+    border-bottom: 1.5px solid var(--OX);
+    border-right: 1.5px solid var(--BONE2);
+    letter-spacing: 0.1rem;
+}
+
+/* Reviewer Information Title Styles */
+.Reviewer-Information > h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding: 0.35rem;
+    margin-bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: max-content;
+    border-bottom: 1.5px solid var(--OX);
+    border-left: 1.5px solid var(--BONE2);
+    letter-spacing: 0.1rem;
+}
+
+/* Summary Field Title Styles */
+.summary-field  > h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding: 0.35rem;
+    background-color: rgb(100, 100, 100, 0.1);
+    border-radius: 5px;
+    max-width: max-content;
+    border-bottom: 1.5px solid var(--SAGE);
+    letter-spacing: 0.1rem;
+}
+
+/* Brief Title Styles */
+.Brief > h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding: 0.35rem;
+    margin-bottom: 0.25rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: max-content;
+    border-bottom: 1.5px solid var(--OX);
+    border-right: 1.5px solid var(--BONE2);
+    letter-spacing: 0.1rem;
+}
+
+.Analysis > label > h4 {
+    font-size: 1.5rem;
+    padding: 0.35rem;
+    margin-bottom: 0.25rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: max-content;
+    border-bottom: 1.5px solid var(--BONE2);
+    letter-spacing: 0.1rem;
+}
+
+.Analysis > label > textarea {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--WIZ);
+    font-size: 1rem;
+    font-family: var(--CSC);
+    border: none;
+    border-bottom: 1px solid var(--OX);
+    border-right: 1px solid var(--BONE2);
+    border-radius: 5px;
+    padding: 0.15rem;
+    width: 100%;
+    height: auto;
+}
+
+.Analysis > label > textarea.valid {
+    background-color: rgba(50, 205, 50, 0.1);
+}
+.Analysis > label > textarea.invalid {
+    background-color: rgba(239, 0, 0, 0.3);
+}
+
+/* Styles for Analysis (Pros & Cons) */
+
+/* Summary Text Styles */
+#summary-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+/* Summary Textarea Styles */
+#summary-text > textarea {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--BONE);
+    font-size: 1rem;
+    font-family: var(--CSC);
+    border: none;
+    border-bottom: 1px solid var(--BONE2);
+    border-right: 1px solid var(--OX);
+    border-radius: 5px;
+    padding: 0.15rem;
+    min-width: 150%;
+    height: auto;
+    min-height: 100px;
+}
+
+/* Center #synopsis within the brief section, and center #synopsis child elements */
+#synopsis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+/* Style #synopsis h4 to match .characters h4 */
+#synopsis > * > h4 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    padding: 0.15rem;
+    margin-bottom: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    max-width: max-content;
+    border-bottom: 1.5px solid var(--BONE2);
+    letter-spacing: 0.1rem;
+}
+
+/* Styles for #synopsis textarea */
+#synopsis > textarea {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--WIZ);
+    font-size: 1rem;
+    font-family: var(--CSC);
+    border: none;
+    border-bottom: 1px solid var(--OX);
+    border-right: 1px solid var(--BONE2);
+    border-radius: 5px;
+    padding: 0.15rem;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styles for Characters text areas in Brief */
+.Brief > div > div > section.characters > textarea, #synopsis > textarea {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--WIZ);
+    font-size: 1rem;
+    font-family: var(--CSC);
+    border: none;
+    border-bottom: 1px solid var(--OX);
+    border-right: 1px solid var(--BONE2);
+    border-radius: 5px;
+    padding: 0.15rem;
+    min-width: 50%;
+    height: auto;
+}
+
+/* Styles for valid and invalid text areas */
+#summaryNote {
+    margin: 0;
+    top: 0;
+    max-width: max-content;
+    width: 120%;
+}
+
+#summary-text > textarea.valid {
+    background-color: rgba(50, 205, 50, 0.1);
+}
+
+#summary-text > textarea.invalid {
+    background-color: rgba(239, 0, 0, 0.3);
+}
+
+.Brief > section.characters > textarea.valid {
+    background-color: rgba(50, 205, 50, 0.1);
+}
+
+.Brief > section.characters > textarea.invalid {
+    background-color: rgba(239, 0, 0, 0.3);
+}
+
+/* Styles for valid and invalid selects */
+.Brief > div > div > section.themes > * > select.valid {
+    background-color: rgba(50, 205, 50, 0.1);
+}
+
+.Brief > div > div > section.themes > * > select.invalid {
+    background-color: rgba(239, 0, 0, 0.3);
+}
+
+/* Styles for Brief Sections (Characters, Themes, and Synopsis) */
+.Brief > div > div > section > h4 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    padding: 0.15rem;
+    margin-bottom: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    max-width: max-content;
+    border-bottom: 1.5px solid var(--BONE2);
+    letter-spacing: 0.1rem;
+}
+
+.Brief > div > div > section.themes  > * >button {
+    color: var(--GOLD);
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    max-width: max-content;
+    width: 20%;
+    border-bottom: 1.5px solid var(--BONE2);
+    letter-spacing: 0.1rem;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    padding: 0.15rem;
+    font-family: var(--RIS);
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+.Brief > div > div > section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 0.25rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: max-content;
+    border-bottom: 1.5px solid var(--OX);
+    border-right: 1.5px solid var(--OX);
+}
+
+.Brief > div > div > section.themes > * {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.Brief > div > div.char-theme-prevs > section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 0.25rem;
+    background: none;
+    border: none;
+    max-height: max-content;
+    text-align: center;
+} 
+
+/* Styles for Book Information labels */
+.Book-Information > label {
+    font-size: 1.25rem;
+    font-family: var(--SS3);
+    color: var(--SPACE);
+    letter-spacing: 0.2rem;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+/* Styles for Reviewer Information labels */
+.Reviewer-Information > label {
+    font-size: 1.25rem;
+    font-family: var(--SS3);
+    color: var(--SPACE);
+    letter-spacing: 0.2rem;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+/* Styles for Brief Characters labels */
+.Brief > div > div > section > label {
+    font-size: 1rem;
+    font-family: var(--SS3);
+    color: var(--GOLD);
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+/* Styles for Book Information inputs and selects */
+.Book-Information > * > input, .Book-Information > * > select {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--BONE);
+    font-size: 1rem;
+    font-family: var(--CSC);
+    border: none;
+    border-bottom: 1px solid var(--BONE2);
+    border-right: 1px solid var(--OX);
+    border-radius: 5px;
+    padding: 0.15rem;
+}
+
+.Book-Information > * > select {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.Book-Information > * > input::placeholder, .Book-Information > * > select::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Styles for Reviewer Information inputs */
+.Reviewer-Information > * > input {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--BONE);
+    font-size: 1rem;
+    font-family: var(--CSC);
+    border: none;
+    border-bottom: 1px solid var(--BONE2);
+    border-left: 1px solid var(--OX);
+    border-radius: 5px;
+    padding: 0.15rem;
+}
+
+.Reviewer-Information > * > input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Styles for Brief themes select */
+.Brief > div > div > section.themes > * > select {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--GOLD);
+    font-size: 1rem;
+    font-family: var(--CSC);
+    border: none;
+    border-bottom: 1px solid var(--OX);
+    border-right: 1px solid var(--BONE2);
+    border-radius: 5px;
+    padding: 0.15rem;
+}
+
+/* Styles for Brief Characters inputs */
+.Brief > div > div > section.characters > * > input {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--WIZ);
+    font-size: 1.15rem;
+    font-family: var(--CSC);
+    border: none;
+    border-bottom: 1px solid var(--OX);
+    border-right: 1px solid var(--BONE2);
+    border-radius: 5px;
+    padding: 0.2rem;
+}
+
+/* Remove list item decoration for characters */
+.Brief > div > div > section > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles for custom image upload for Cover Art */
+.custom-file-upload {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.custom-file-label .upload-icon {
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+
+.custom-file-input {
+    display: none;
+}
+
+/* Styles for review image size */
+.review-image > span > img, .review-image > span > .faUser {
+    width: 100px;
+    height: auto;
+}
+
+.faUser {
+    font-size: 100px;
+    color: var(--GOLD);
+    border-radius: 15px;
+    padding: 1rem;
+    border: 0.1px solid var(--OX);
+    box-shadow: 1rem 0.5rem var(--UV);
+}
+
+/* Styles for Cover Art size */
+.cover-art > span > img {
+    width: 100px;
+    height: auto;
+}
+
+.faBook {
+    font-size: 100px;
+    color: var(--GOLD);
+    border-radius: 15px;
+    border: 0.1px solid var(--OX);
+    box-shadow: 1rem 0.5rem var(--UV);
+}
+
+/* Styles for character preview and clipboard icon size */
+div.char-theme-prevs > .characters > span > .faClipBoardList {
+    font-size: 100px;
+    color: var(--GOLD);
+    border-radius: 15px;
+    border: 0.1px solid var(--OX);
+    width: 60%;
+    margin-bottom: 1.5rem;
+    height: 100%;
+    padding: 1rem;
+}
+
+/* Styles for the conclusion section */
+.conclusion {
+    background-color: var(--DIRTYROSE);
+}

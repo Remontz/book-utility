@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Book Utils",
+  "name": "Book Utilities",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,12 +8,27 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "SG_apple-icon.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "SG_icon-44x44.png",
+      "type": "image/png",
+      "sizes": "44x44"
+    },
+    {
+      "src": "SG_icon-78x78.png",
+      "type": "image/png",
+      "sizes": "78x78"
+    },
+    {
+      "src": "SG_icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "SG_icon-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
